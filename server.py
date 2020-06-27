@@ -58,7 +58,7 @@ def error(code, message: str = '') -> Response:
 @app.route('/', methods=['POST'])
 def index() -> Response:
     """
-    Find page by given URL and return OpenGraph tags found.
+    POST - Find page by given URL and return OpenGraph tags found.
     Can fire errors:
          - param-expected: no URL param given,
          - page-unavailable: page with given URL is not available.
